@@ -19,7 +19,7 @@ public class HealthActivity extends  AppCompatActivity{
         @BindView(R.id.locationTextView)
         TextView mLocationTextView;
         @BindView(R.id.listView)
-        ListView mListView;
+        ListView listView;
 //        @BindView(R.id.spinner)
 //        Spinner mSpinner;
         private String[] health = new String[] {"KEMPISKY VILLA ROSA", "Mother's Bistro",
@@ -35,14 +35,14 @@ public class HealthActivity extends  AppCompatActivity{
             setContentView(R.layout.activity_health);
             ButterKnife.bind(this);
             MyHealthArrayAdapter adapter = new MyHealthArrayAdapter(this, android.R.layout.simple_list_item_1, health, cuisines);
-            mListView.setAdapter(adapter);
+            listView.setAdapter(adapter);
 
-            mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                    String restaurant = ((TextView)view).getText().toString();
+                    String health = ((TextView)view).getText().toString();
                     Log.v("HealthActivity", "In the onItemClickListener!");
-                    Toast.makeText(HealthActivity.this, restaurant, Toast.LENGTH_LONG).show();
+                    Toast.makeText(HealthActivity.this, health, Toast.LENGTH_LONG).show();
                 }
             });
 

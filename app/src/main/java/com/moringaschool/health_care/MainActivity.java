@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @BindView(R.id.healthButton)
-    Button mFindRestaurantsButton;
+    Button healthButton;
     @BindView(R.id.locationEditText)
     EditText mLocationEditText;
 //    @BindView(R.id.appNameTextView)
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ButterKnife.bind(this);
 
-        mFindRestaurantsButton.setOnClickListener(this);
+        healthButton.setOnClickListener(this);
     }
 
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v) {
-        if (v == mFindRestaurantsButton) {
+        if (v == healthButton) {
             String location = mLocationEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, HealthActivity.class);
             intent.putExtra("location", location);
