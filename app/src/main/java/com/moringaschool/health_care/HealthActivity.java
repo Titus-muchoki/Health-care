@@ -51,6 +51,5 @@ public class HealthActivity extends  AppCompatActivity{
             mLocationTextView.setText("Health care around you: " + location);
             Log.d("HealthActivity", "In the onCreate method!");
         }
-
     }
 

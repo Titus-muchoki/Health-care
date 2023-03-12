@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        myWebView=(WebView) findViewById(R.id.webView);
+        myWebView=(WebView) findViewById(R.id.webView);
         myWebView.setWebViewClient(new WebViewClient());
         myWebView.loadUrl("https://semicolon.dev/");
         WebSettings webSettings=myWebView.getSettings();
