@@ -18,6 +18,13 @@
         android:layout_marginBottom="440dp"
         android:background="@color/purple_200">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="33dp"
+            android:layout_y="-22dp"
+            app:srcCompat="@drawable/hel5" />
     </WebView>
 
     <ImageView
@@ -30,18 +37,60 @@
         android:layout_marginBottom="389dp"
         app:srcCompat="@drawable/hel3" />
 
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="272dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/healthButton"
+        android:layout_width="394dp"
+        android:layout_height="66dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="341dp"
-        android:textStyle="bold"
-        android:text="find health care near you" />
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="36dp"
+        android:text="find health care near you"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginBottom="205dp"
+        app:srcCompat="@drawable/hel4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="180dp"
+        android:text="Society health care awareness"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationEditText"
+        android:background="#FFFFFFFF"
+        android:layout_above="@id/healthButton"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:hint="Enter Zip Code"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
